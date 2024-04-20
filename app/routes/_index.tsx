@@ -41,12 +41,35 @@ export default function Index() {
       <div className="w-full mt-48">
         <HeroParallax products={products} />
       </div>
-      <div className="w-full h-screen relative">
+      <div className="w-full p-4 md:p-8 lg:p-16 relative">
 
         <div
           className="absolute inset-0 h-full w-full  bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:20px_20px] -z-[10]"
         ></div>
 
+        <div className="flex justify-center items-center w-full">
+
+          <div className="grid md-3/4 w-full lg:w-2/3 auto-rows-[240px] grid-cols-3 gap-4">
+            <div
+              className={`row-span-1 rounded-xl border-2 border-slate-400/10 relative  p-4 dark:bg-zinc-900`}
+            >
+              <div
+                className="absolute inset-0 h-full w-full  bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:20px_20px]"
+              ></div>
+
+            </div>
+            <div
+              className={`row-span-1 col-span-2 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-zinc-900`}
+            ></div>
+            <div
+              className={`row-span-1 col-span-2 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-zinc-900`}
+            ></div>
+            <div
+              className={`row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-zinc-900`}
+            ></div>
+
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div
           className="absolute inset-0 h-full w-full  bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:20px_20px] -z-[10]"
         ></div>
-        <div className="h-full w-full">
+        <div className="w-full overflow-x-hidden">
           {children}
         </div>
         <Nav />
