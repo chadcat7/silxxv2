@@ -1,8 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
-import { useState } from "react";
 import { HeroParallax } from "~/components/ui/hero";
-import { HeroHighlight, Highlight } from "~/components/ui/highlight";
-import { motion } from "framer-motion";
+import { GlowingStarsTitle, GlowingStarsDescription, GlowingStarsBackgroundCard } from "~/components/ui/glowstar";
+import { AnimatedTooltip } from "~/components/ui/people";
 
 export const meta: MetaFunction = () => {
   return [
@@ -10,6 +9,34 @@ export const meta: MetaFunction = () => {
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
+
+const people = [
+  {
+    id: 1,
+    name: "John Doe",
+    designation: "Software Engineer",
+    image: "/pfps/namish.jpeg",
+  },
+  {
+    id: 2,
+    name: "Robert Johnson",
+    designation: "Product Manager",
+    image: "/pfps/namish.jpeg",
+  },
+  {
+    id: 3,
+    name: "Jane Smith",
+    designation: "Data Scientist",
+    image: "/pfps/namish.jpeg",
+  },
+  {
+    id: 4,
+    name: "Emily Davis",
+    designation: "UX Designer",
+    image: "/pfps/namish.jpeg",
+  },
+];
+
 
 export const products = [
   "/scroll/1.png",
@@ -26,13 +53,6 @@ export const products = [
 
 
 export default function Index() {
-  const [blobPosition, setBlobPosition] = useState({ x: 0, y: 0 })
-  const [isHovering, setIsHovering] = useState(false);
-  const handleMouseMove = (event) => {
-    setBlobPosition({ x: event.pageX, y: event.pageY });
-    setIsHovering(true)
-  };
-
 
   return (
     <div className="w-screen h-min-screen ">
@@ -53,12 +73,7 @@ export default function Index() {
       <div className="w-full mt-48">
         <HeroParallax products={products} />
       </div>
-      {isHovering &&
-        <div className="custom-trailer absolute z-[97] p-8 bg-white rounded-full" style={{ top: blobPosition.y, left: blobPosition.x }}>
-
-        </div>
-      }
-      <div className="w-full relative  p-4 md:p-8 lg:p-16">
+      <div className="w-full  p-4 md:p-8 lg:p-16">
 
         <div
           className="absolute inset-0 h-full w-full  bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:20px_20px] -z-[10]"
@@ -66,20 +81,73 @@ export default function Index() {
         <div className="flex justify-center griddy  items-center w-full">
 
           <div
-            onMouseMove={handleMouseMove} onMouseEnter={() => setIsHovering(true)}
-            onMouseLeave={() => setIsHovering(false)}
-            className="grid md-3/4 w-full lg:w-2/3 auto-rows-[240px] grid-cols-3  gap-4">
-            <div className={`row-span-1 rounded-xl border-2  z-[98] backdrop-blur-3xl border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}>
+            className="grid md-3/4 w-full lg:w-2/3 auto-rows-[280px] grid-cols-3  gap-4">
+            <div className={`row-span-1 relative col-span-3 md:col-span-1 rounded-xl border-2  z-[98] backdrop-blur-3xl border-slate-400/10 relative  p-0 dark:bg-zinc-900/70`}>
+              <GlowingStarsBackgroundCard>
+                <div className="bottom-4 left-4 absolute">
+                  <GlowingStarsTitle>40+ Schools</GlowingStarsTitle>
+                  <div className="flex justify-between items-end">
+                    <GlowingStarsDescription>
+                      100+ Teams. 300+ Students. Battle your way to the top and be the glowing star.
+                    </GlowingStarsDescription>
+                  </div>
+                </div>
+              </GlowingStarsBackgroundCard>
+            </div>
 
+            <div
+              className={`row-span-1 relative col-span-3 md:col-span-2 rounded-xl border-2 z-[98] backdrop-blur-3xl flex justify-center items-center	 border-slate-400/10   p-4 dark:bg-zinc-900/70`}
+            >
+              <div className="absolute bottom-0 z-[1235254656] left-0 p-4 bg-zinc-800/90 backdrop-blur-3xl w-full">Compeitions varying of diverse skill sets and age! All aboard!</div>
+              <div
+                className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+              ></div>
+              <div className="content w-full">
+
+                <div className="flex justify-center gap-2">
+                  <div className="card relative p-4 w-1/3 border-2 bg-zinc-900 border-pink-300 rounded-xl h-[230px] -rotate-6 flex-col flex justify-center items-center	">
+                    <div
+                      className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+                    ></div>
+                    <img src="/pfps/namish.jpeg" alt="a" className="h-16 w-16 rounded-full border-2 border-pink-300" />
+                    <p className="text-pink-300 text-lg text-center mt-2">Musician</p>
+                  </div>
+                  <div className="relative card p-4 w-1/3 border-2 bg-zinc-900 border-blue-300 rounded-xl h-[230px] flex-col flex justify-center items-center	">
+                    <div
+                      className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+                    ></div>
+                    <img src="/pfps/namish.jpeg" alt="a" className="h-16 w-16 rounded-full border-2 border-blue-300" />
+                    <p className="text-blue-300 text-lg text-center mt-2">Coder</p>
+                  </div>
+                  <div className="relatve card p-4 w-1/3 border-2 bg-zinc-900 border-orange-300 rounded-xl h-[230px] rotate-6	flex-col flex justify-center items-center	">
+                    <div
+                      className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+                    ></div>
+                    <img src="/pfps/namish.jpeg" alt="a" className="h-16 w-16 rounded-full border-2 border-orange-300" />
+                    <p className="text-orange-300 text-lg text-center mt-2">VFX Dude</p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div
-              className={`row-span-1 col-span-2 rounded-xl border-2 z-[98] backdrop-blur-3xl	 border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}
-            ></div>
+              className={`row-span-1  col-span-3 md:col-span-2 rounded-xl border-2 z-[98] backdrop-blur-3xl	 border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}
+            >
+              <div
+                className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+              ></div>
+              <div className="flex w-full h-full justify-end  flex-col relative">
+
+                <h1 className="text-3xl mb-4">Brought to you by a team of <span className="text-accented font-bold">ultra talented and very cool people!</span> </h1>
+                <div className="div flex items-center">
+                  <AnimatedTooltip items={people} />
+
+                  <a href="/team" className="px-3 text-black py-2 bg-accented rounded-full z-[12312]"> → </a>
+                </div>
+
+              </div>
+            </div>
             <div
-              className={`row-span-1 col-span-2 rounded-xl border-2 z-[98] backdrop-blur-3xl	 border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}
-            ></div>
-            <div
-              className={`row-span-1 rounded-xl border-2 z-[98] backdrop-blur-3xl	 border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}
+              className={`row-span-1 col-span-3 md:col-span-1 rounded-xl border-2 z-[98] backdrop-blur-3xl	 border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}
             ></div>
 
           </div>
