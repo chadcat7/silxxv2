@@ -12,16 +12,16 @@ export const meta: MetaFunction = () => {
 };
 
 export const products = [
-  "https://assets-global.website-files.com/5f7c5b7dd36c5bdb23a35350/60663b29ff84192f1a973695_sVS1G6Fhmv8_1Ocxf0nmdqjwSbfYz8n30Kj-O8PradqUzbxV55xM8A2t10z0zcQRjwQg34JK0dQPylD7r99ZSIMkKsrWmz7OhDIYbWbAO543hyQZJCctVQP3A6vCUhi9Tj41p8D0.png",
-  "https://helpx.adobe.com/content/dam/help/en/photoshop/get-started/workspace.png",
-  "https://cdn.sanity.io/images/s6lu43cv/production-v2/b6a9c9660697ba8770dcd9247fc4c6344ddf7327-6276x3531.png?rect=0,4,6276,3525&w=600&h=337&q=80&auto=format&dpr=2",
-  "https://assets-global.website-files.com/5f7c5b7dd36c5bdb23a35350/60663b29ff84192f1a973695_sVS1G6Fhmv8_1Ocxf0nmdqjwSbfYz8n30Kj-O8PradqUzbxV55xM8A2t10z0zcQRjwQg34JK0dQPylD7r99ZSIMkKsrWmz7OhDIYbWbAO543hyQZJCctVQP3A6vCUhi9Tj41p8D0.png",
-  "https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2022/10/Valorant-UI.jpg",
-  "https://blog.adobe.com/en/publish/2015/10/29/media_1ff65cf2137a2841b88def34bb5f787e32d174a27.png?width=2000&format=webply&optimize=medium",
-  "https://www.cnet.com/a/img/resize/392052e32b37387d935e3d3db9795eb5135d6efd/hub/2019/10/21/0b8fbcc3-50fd-4561-8135-f9e6a1e2ed9d/figma-editor.jpg?auto=webp&fit=crop&height=675&width=1200",
-  "https://i.ytimg.com/vi/QAKHqYyMxSo/maxresdefault.jpg",
-  "https://raw.githubusercontent.com/dark-Jedi2108/nvide/main/.github/screenshots/05.png",
-  "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/02/swimming-pool-scene-3d.jpeg",
+  "/scroll/1.png",
+  "/scroll/2.png",
+  "/scroll/3.png",
+  "/scroll/1.png",
+  "/scroll/4.avif",
+  "/scroll/5.webp",
+  "/scroll/6.jpg",
+  "/scroll/7.jpg",
+  "/scroll/8.png",
+  "/scroll/9.avif",
 ];
 
 

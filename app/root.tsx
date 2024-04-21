@@ -26,13 +26,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="dark overflow-x-clip">
-        <div
-          className="absolute inset-0 h-full w-full  bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:20px_20px] -z-[10]"
-        ></div>
         <div className="w-full overflow-x-clip">
           {children}
-          <Footer />
         </div>
+        <Footer />
         <Nav />
         <ScrollRestoration />
         <Scripts />
