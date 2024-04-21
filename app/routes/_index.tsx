@@ -96,7 +96,7 @@ export default function Index() {
             </div>
 
             <div
-              className={`row-span-1 relative col-span-3 md:col-span-2 rounded-xl border-2 z-[98] backdrop-blur-3xl flex justify-center items-center	 border-slate-400/10   p-4 dark:bg-zinc-900/70`}
+              className={`row-span-1 relative col-span-3 md:col-span-2 rounded-xl border-2 z-[98] backdrop-blur-3xl flex justify-center items-center	 border-slate-400/10   p-4 dark:bg-zinc-900/70 group`}
             >
               <div className="absolute bottom-0 z-[1235254656] left-0 p-4 bg-zinc-800/90 backdrop-blur-3xl w-full">Compeitions varying of diverse skill sets and age! All aboard!</div>
               <div
@@ -105,7 +105,7 @@ export default function Index() {
               <div className="content w-full">
 
                 <div className="flex justify-center gap-2">
-                  <div className="card relative p-4 w-1/3 border-2 bg-zinc-900 border-pink-300 rounded-xl h-[230px] -rotate-6 flex-col flex justify-center items-center	">
+                  <div className="card relative p-4 w-1/3 border-2 bg-zinc-900 border-pink-300 rounded-xl h-[230px] group-hover:rotate-0 transition -rotate-6 flex-col flex justify-center items-center	">
                     <div
                       className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
                     ></div>
@@ -119,7 +119,7 @@ export default function Index() {
                     <img src="/pfps/namish.jpeg" alt="a" className="h-16 w-16 rounded-full border-2 border-blue-300" />
                     <p className="text-blue-300 text-lg text-center mt-2">Coder</p>
                   </div>
-                  <div className="relatve card p-4 w-1/3 border-2 bg-zinc-900 border-orange-300 rounded-xl h-[230px] rotate-6	flex-col flex justify-center items-center	">
+                  <div className="relatve card p-4 w-1/3 border-2 bg-zinc-900 border-orange-300 rounded-xl h-[230px] group-hover:rotate-0 transition rotate-6	flex-col flex justify-center items-center	">
                     <div
                       className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
                     ></div>
