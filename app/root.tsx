@@ -7,7 +7,7 @@ import {
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 import { Nav } from "./components/Nav";
-
+import { Footer } from "./components/Footer";
 import styles from "./tailwind.css?url"
 
 export const links: LinksFunction = () => [
@@ -31,6 +31,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         ></div>
         <div className="w-full overflow-x-clip">
           {children}
+          <Footer />
         </div>
         <Nav />
         <ScrollRestoration />

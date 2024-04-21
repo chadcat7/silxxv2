@@ -80,3 +80,7 @@ html {
 		font-family: Poppins, sans-serif;
 }
 
+
+.d1:hover ~ .custom-trailer {
+  background: #f00;
+}
