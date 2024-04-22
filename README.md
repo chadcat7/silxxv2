@@ -8,9 +8,9 @@ huge shoutout remix and aceternity
     - [x] the f-ing slider
 - [x] navmenu
 - [x] message page 
-- [ ] rickroll link 
+- [x] rickroll link 
 - [x] correct metadata
 - [x] new favicon
 - [ ] animation on landing page
-- [ ] 404 page
+- [x] 404 page
 - [ ] page transitions

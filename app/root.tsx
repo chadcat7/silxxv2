@@ -4,12 +4,32 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  isRouteErrorResponse,
+  useRouteError,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
 import styles from "./tailwind.css?url"
 import React, { createContext, useState } from "react";
+import { BackgroundBeams } from "./components/ui/beams";
+
+
+export function ErrorBoundary() {
+  const error = useRouteError();
+
+  if (isRouteErrorResponse(error)) {
+    return (
+      <div className="h-screen flex justify-center items-center">
+        <BackgroundBeams />
+        <h1 className="relative z-10 text-3xl md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
+          404 PAGE NOT FOUND
+        </h1>
+
+      </div>
+    );
+  }
+}
 
 
 export const links: LinksFunction = () => [

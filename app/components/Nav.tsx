@@ -41,7 +41,7 @@ export function Nav() {
       </div>
     </div>
     <AnimatePresence mode="wait">
-      {open && <motion.div variants={slide} className="bg-zinc-950 p-6 lg:p-16 fixed right-0 top-0 h-screen w-full lg:w-1/3 " initial="initial" animate="enter" exit="exit">
+      {open && <motion.div variants={slide} className="bg-zinc-950 z-[99] p-6 lg:p-16 fixed right-0 top-0 h-screen w-full lg:w-1/3 " initial="initial" animate="enter" exit="exit">
         <div className="h-16 flex items-center">
           <p className="text-2xl text-gray-300">NAVIGATION</p>
         </div>
