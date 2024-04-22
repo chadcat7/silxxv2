@@ -59,8 +59,8 @@ export default function Events() {
           {events[currentIndex].desc}
         </motion.p>
         <div className="flex gap-4 mt-12 items-center justify-center">
-          <p className="next cursor-pointer" onClick={handlePrevious}>prev</p>
-          <p className="next cursor-pointer" onClick={handleNext}>next</p>
+          <img className="cursor-pointer cf" src="/icons/caret-left.svg" onClick={handlePrevious} />
+          <img className="cursor-pointer cf" src="/icons/caret-right.svg" onClick={handleNext} />
         </div>
       </motion.div>
     </ImagesSlider>

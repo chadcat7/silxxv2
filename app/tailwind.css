@@ -81,6 +81,6 @@ html {
 }
 
 
-.d1:hover ~ .custom-trailer {
-  background: #f00;
+.cf {
+  filter: invert(97%) sepia(16%) saturate(95%) hue-rotate(182deg) brightness(121%) contrast(100%);
 }

@@ -3,12 +3,14 @@ huge shoutout remix and aceternity
 ### Todo
 - [x] home page
 - [x] teams page 
-- [ ] event page 
-    - [ ] use new icons
-    - [x] the fing slider
+- [x] event page 
+    - [x] use new icons
+    - [x] the f-ing slider
 - [ ] navmenu
 - [ ] message page 
 - [ ] rickroll link 
 - [ ] correct metadata
-- [ ] new favicon
+- [x] new favicon
 - [ ] animation on landing page
+- [ ] 404 page
+- [ ] page transitions

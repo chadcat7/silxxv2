@@ -3,6 +3,7 @@ import { HeroParallax } from "~/components/ui/hero";
 import { GlowingStarsTitle, GlowingStarsDescription, GlowingStarsBackgroundCard } from "~/components/ui/glowstar";
 import { AnimatedTooltip } from "~/components/ui/people";
 import { Meteors } from "~/components/ui/meteors";
+import { ContainerScroll } from "~/components/ui/scrollanim";
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
@@ -59,7 +60,7 @@ export default function Index() {
       <div className="w-full  h-screen flex justify-center items-center" style={{ background: "linear-gradient(to bottom right, #09090baa, #09090b99 60%, #09090b77), url('./header.jpg')", backgroundSize: "cover", clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)", backgroundPosition: "top center", }}>
         <div className="content">
           <header className="flex flex-col items-center justify-center mb-4">
-            <h1 className="text-[0.9rem] sm:text-[1.4rem] text-right font-light text-darkfg">CELEBRATING TWO SUCCESSFUL DECADES OF THE</h1>
+            <h1 className="text-[0.9rem] sm:text-[1.4rem] text-right font-light text-darkfg">TO ERR IS A MACHINE, TO GLITCH A HUMAN</h1>
             <h1 className="text-[6.5rem] sm:text-[10rem] -mb-[2rem] sm:-mb-[3rem] -mt-[1.5rem] text-center leading-0 font-extrabold text-gray-200">SILICO</h1>
             <h1 className="text-[0.9rem] sm:text-[1.4rem] text-right font-light text-gray-200 self-end mr-8 sm:mr-4">BATTLES V20.1</h1>
             <div className="flex justify-center items-center gap-4 mt-8">
@@ -159,6 +160,53 @@ export default function Index() {
 
           </div>
         </div>
+      </div>
+      <div className="h-screen relative bg-zinc-900/10 flex justify-center items-center">
+        <div
+          className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+        ></div>
+        <ContainerScroll
+          titleComponent={
+            <>
+              <h1 className="text-4xl font-semibold text-white dark:text-white">
+                SO..... <br />
+                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                  Are you ready?
+                </span>
+              </h1>
+            </>
+          }
+        >
+          <div className="flex w-full h-full relative justify-center items-center">
+            <div
+              className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+            ></div>
+            <div className="w-full p-2 z-[121] md:w-3/4 ">
+              <div className="w-full p-2 bg-zinc-900 rounded-t-xl flex justify-between items-center">
+                <div className="md:flex hidden gap-2">
+                  <div className="p-2 bg-red-300 rounded-full"></div>
+                  <div className="p-2 bg-green-300 rounded-full"></div>
+                  <div className="p-2 bg-orange-300 rounded-full"></div>
+                </div>
+                <p>
+                  ( 1 ) SILICO BATTLES v20.1
+                </p>
+
+              </div>
+              <div className="h-[15rem] md:h-[10rem] rounded-b-xl w-full bg-zinc-800 flex justify-center items-center">
+                <div className="something flex-col flex justify-center items-center gap-4">
+                  Dare To Take The Challenge?
+                  <div className="flex gap-4">
+                    <a href="#" className="px-4 py-1 text-md rounded-full text-white bg-zinc-950">Yes</a>
+                    <a href="#" className="px-4 py-1 text-md rounded-full bg-accented text-black">YES YES</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ContainerScroll>
+
+
       </div>
     </div>
   );
