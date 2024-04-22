@@ -2,7 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 import { HeroParallax } from "~/components/ui/hero";
 import { GlowingStarsTitle, GlowingStarsDescription, GlowingStarsBackgroundCard } from "~/components/ui/glowstar";
 import { AnimatedTooltip } from "~/components/ui/people";
-
+import { Meteors } from "~/components/ui/meteors";
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
@@ -105,21 +105,21 @@ export default function Index() {
               <div className="content w-full">
 
                 <div className="flex justify-center gap-2">
-                  <div className="card relative p-4 w-1/3 border-2 bg-zinc-900 border-pink-300 rounded-xl h-[230px] group-hover:rotate-0 transition -rotate-6 flex-col flex justify-center items-center	">
+                  <div className="card relative p-4 w-1/2 md:w-1/3 border-2 bg-zinc-900 border-pink-300 rounded-xl h-[230px] group-hover:rotate-0 transition -rotate-6 flex-col flex justify-center items-center	">
                     <div
                       className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
                     ></div>
                     <img src="/pfps/namish.jpeg" alt="a" className="h-16 w-16 rounded-full border-2 border-pink-300" />
                     <p className="text-pink-300 text-lg text-center mt-2">Musician</p>
                   </div>
-                  <div className="relative card p-4 w-1/3 border-2 bg-zinc-900 border-blue-300 rounded-xl h-[230px] flex-col flex justify-center items-center	">
+                  <div className="relative card hidden md:flex p-4 w-1/3 border-2 bg-zinc-900 border-blue-300 rounded-xl h-[230px] flex-col flex justify-center items-center	">
                     <div
                       className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
                     ></div>
                     <img src="/pfps/namish.jpeg" alt="a" className="h-16 w-16 rounded-full border-2 border-blue-300" />
                     <p className="text-blue-300 text-lg text-center mt-2">Coder</p>
                   </div>
-                  <div className="relatve card p-4 w-1/3 border-2 bg-zinc-900 border-orange-300 rounded-xl h-[230px] group-hover:rotate-0 transition rotate-6	flex-col flex justify-center items-center	">
+                  <div className="relatve card p-4 w-1/2 md:w-1/3 border-2 bg-zinc-900 border-orange-300 rounded-xl h-[230px] group-hover:rotate-0 transition rotate-6	flex-col flex justify-center items-center	">
                     <div
                       className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
                     ></div>
@@ -147,8 +147,15 @@ export default function Index() {
               </div>
             </div>
             <div
-              className={`row-span-1 col-span-3 md:col-span-1 rounded-xl border-2 z-[98] backdrop-blur-3xl	 border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}
-            ></div>
+              className={`row-span-1 col-span-3 md:col-span-1 overflow-hidden flex-col flex justify-end rounded-xl border-2 z-[98] backdrop-blur-3xl	 border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}
+            >
+              <h1 className="text-3xl mb-4">Registrations <span className="text-accented font-bold">Out Now</span></h1>
+              <div className="flex gap-4">
+                <a href="/" className="px-8 py-2 rounded-full bg-accented text-black">Register</a>
+                <a href="/" className="px-8 py-2 rounded-full bg-white text-black">Brouchure</a>
+              </div>
+              <Meteors number={10} />
+            </div>
 
           </div>
         </div>
