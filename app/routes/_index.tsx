@@ -6,8 +6,8 @@ import { Meteors } from "~/components/ui/meteors";
 import { ContainerScroll } from "~/components/ui/scrollanim";
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "SILICO BATTLES V20.1" },
+    { name: "description", content: "Welcome to the 20th version of the Silico Battles." },
   ];
 };
 

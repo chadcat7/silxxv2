@@ -84,3 +84,12 @@ html {
 .cf {
   filter: invert(97%) sepia(16%) saturate(95%) hue-rotate(182deg) brightness(121%) contrast(100%);
 }
+.svgCurve{
+    position: absolute;
+    top: 0;
+    left: -99px;
+    width: 100px;
+    height: 100%;
+    fill: #09090b;
+    stroke: none;
+}

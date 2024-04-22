@@ -1,5 +1,12 @@
+import { MetaFunction } from "@remix-run/node";
 import { Member } from "~/components/Member";
 
+export const meta: MetaFunction = () => {
+  return [
+    { title: "SILICO BATTLES CORE TEAM V20.1" },
+    { name: "description", content: "Team members of the 20th version of the Silico Battles." },
+  ];
+};
 export default function Team() {
   return <div className="px-4 py-32 md:px-12 md:py-48">
     <h1 className="text-3xl md:text-5xl mb-12 font-bold text-center">The <span className="text-accented">CORE TEAM</span></h1>

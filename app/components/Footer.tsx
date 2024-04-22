@@ -41,7 +41,7 @@ export function Footer() {
                 <a href="#" className="hover:underline">Register</a>
               </li>
               <li>
-                <a href="#" className="hover:underline">Message</a>
+                <a href="/message" className="hover:underline">Message</a>
               </li>
             </ul>
           </div>

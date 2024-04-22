@@ -3,7 +3,14 @@ import { ImagesSlider } from "~/components/ui/slider";
 import { events } from "~/utils/data";
 import { DataContext } from "~/root";
 import { useContext } from "react";
+import { MetaFunction } from "@remix-run/node";
 
+export const meta: MetaFunction = () => {
+  return [
+    { title: "SILICO BATTLES EVENTS V20.1" },
+    { name: "description", content: "All the events in the 20th version of the Silico Battles." },
+  ];
+};
 export default function Events() {
   const images = [
     "/events/1.jpg",
