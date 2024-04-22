@@ -150,9 +150,9 @@ export default function Index() {
               className={`row-span-1 col-span-3 md:col-span-1 overflow-hidden flex-col flex justify-end rounded-xl border-2 z-[98] backdrop-blur-3xl	 border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}
             >
               <h1 className="text-3xl mb-4">Registrations <span className="text-accented font-bold">Out Now</span></h1>
-              <div className="flex gap-4">
-                <a href="/" className="px-8 py-2 rounded-full bg-accented text-black">Register</a>
-                <a href="/" className="px-8 py-2 rounded-full bg-white text-black">Brouchure</a>
+              <div className="flex gap-4 flex-wrap">
+                <a href="/" className="px-4 py-1 text-md rounded-full bg-accented text-black">Register</a>
+                <a href="/" className="px-4 py-1 text-md rounded-full bg-white text-black">Brouchure</a>
               </div>
               <Meteors number={10} />
             </div>
