@@ -177,7 +177,7 @@ export default function Index() {
             </>
           }
         >
-          <div className="flex w-full h-full relative justify-center items-center" style={{ backgroundImage: 'url("/ipad.jpeg")', backgroundSize: "cover" }}>
+          <div className="flex w-full h-full relative justify-center items-center" style={{ backgroundImage: 'url("/ipad.jpg")', backgroundSize: "cover" }}>
             <div className="w-full p-2 z-[121] sm:w-2/3 md:w-1/2 ">
               <div className="w-full p-2 bg-zinc-900/60 backdrop-blur-3xl rounded-t-xl flex justify-center md:justify-between items-center">
                 <div className="md:flex hidden gap-2">
