@@ -161,7 +161,7 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <div className="h-[90vh] md:h-screen relative bg-zinc-900/10 flex justify-center items-center">
+      <div className="relative bg-zinc-900/10 flex justify-center items-center">
         <div
           className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
         ></div>
