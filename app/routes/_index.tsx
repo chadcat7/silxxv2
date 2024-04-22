@@ -40,16 +40,16 @@ const people = [
 
 
 export const products = [
-  "/scroll/1.png",
-  "/scroll/2.png",
-  "/scroll/3.png",
-  "/scroll/1.png",
-  "/scroll/4.avif",
-  "/scroll/5.webp",
+  "/scroll/1.jpg",
+  "/scroll/2.jpg",
+  "/scroll/3.jpg",
+  "/scroll/1.jpg",
+  "/scroll/4.jpg",
+  "/scroll/5.jpg",
   "/scroll/6.jpg",
   "/scroll/7.jpg",
-  "/scroll/8.png",
-  "/scroll/9.avif",
+  "/scroll/8.jpg",
+  "/scroll/9.jpg",
 ];
 
 
