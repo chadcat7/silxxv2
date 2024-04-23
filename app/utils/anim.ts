@@ -6,8 +6,8 @@ export const menuSlide = {
 
 export const slide = {
   initial: { x: 1000 },
-  enter: (i: number) => ({ x: 0, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i } }),
-  exit: (i: number) => ({ x: 1000, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i } })
+  enter: (i: number) => ({ x: 0, transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.03 * i } }),
+  exit: (i: number) => ({ x: 1000, transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1], delay: 0.05 * i } })
 }
 
 export const scale = {

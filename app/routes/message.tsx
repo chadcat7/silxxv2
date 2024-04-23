@@ -1,5 +1,5 @@
 import { MetaFunction } from "@remix-run/node";
-
+import { motion } from "framer-motion";
 export const meta: MetaFunction = () => {
   return [
     { title: "SILICO BATTLES V20.1" },
@@ -7,7 +7,7 @@ export const meta: MetaFunction = () => {
   ];
 };
 export default function Team() {
-  return <div className="px-4  py-32 md:px-12 md:py-48 flex flex-col gap-4 items-center">
+  return <> <motion.div initial={{ x: "100%" }} animate={{ x: "0%" }} exit={{ opacity: 1 }} transition={{ delay: .3, duration: 1, ease: "easeOut" }} className="px-4  py-32 md:px-12 md:py-48 flex flex-col gap-4 items-center">
     <div
       className="absolute inset-0 h-full w-full  bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:20px_20px] -z-[10]"
     ></div>
@@ -18,6 +18,14 @@ export default function Team() {
 
 
     </p>
-  </div>
+  </motion.div>
+    <motion.div initial={{ x: "100%" }} animate={{ x: "-100%" }} exit={{ opacity: 1 }} transition={{ duration: 1, ease: "easeOut" }} className="fixed top-0 z-[50] bg-accented left-0 h-full w-full">
+      <div
+        className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
+      ></div>
+
+    </motion.div>
+    <motion.div initial={{ x: "100%" }} animate={{ x: "-100%" }} exit={{ opacity: 1 }} transition={{ delay: .25, duration: 1, ease: "easeOut" }} className="fixed top-0 z-[50] bg-neutral left-0 h-full w-full"></motion.div>
+  </>
 }
 

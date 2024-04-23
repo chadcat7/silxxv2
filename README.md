@@ -13,4 +13,5 @@ huge shoutout remix and aceternity
 - [x] new favicon
 - [ ] animation on landing page
 - [x] 404 page
-- [ ] page transitions
+- [x] page transitions
+- [x] optimize images

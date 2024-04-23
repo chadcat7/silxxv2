@@ -13,7 +13,7 @@ import { Footer } from "./components/Footer";
 import styles from "./tailwind.css?url"
 import React, { createContext, useState } from "react";
 import { BackgroundBeams } from "./components/ui/beams";
-
+import { AnimatePresence } from "framer-motion";
 
 export function ErrorBoundary() {
   const error = useRouteError();
@@ -74,5 +74,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return <AnimatePresence mode="wait">
+    <Outlet />;
+  </AnimatePresence>
 }
