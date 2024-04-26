@@ -2,7 +2,7 @@ export function Member({ name, username, role, pfp, quote }: { name: string, use
   return <div className="card makebig relative group  md:w-1/3 w-full lg:w-1/3 p-2 md:p-2 lg:p-8  h-[25rem] lg:h-[35rem]">
     <div className="w-full relative h-full rounded-xl border-[1px] border-accented p-4 md:p-8 flex flex-col items-center justify-center">
 
-      <div className="absolute bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 rounded-b-xl left-0 w-full p-8 bg-accented/30">
+      <div className="absolute bottom-0 opacity-0 group-hover:opacity-100 transition duration-300 rounded-b-xl left-0 w-full p-8 bg-accented md:bg-accented/30">
         <div className="text-right text-md">Discord: {username}</div>
       </div>
       <div
