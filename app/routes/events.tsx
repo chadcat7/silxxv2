@@ -66,8 +66,8 @@ export default function Events() {
             {events[currentIndex].desc}
           </motion.p>
           <div className="flex gap-4 mt-12 items-center justify-center">
-            <img className="cursor-pointer cf" src="/icons/caret-left.svg" onClick={handlePrevious} />
-            <img className="cursor-pointer cf" src="/icons/caret-right.svg" onClick={handleNext} />
+            <img className="makebig cf" src="/icons/caret-left.svg" onClick={handlePrevious} />
+            <img className="cf makebig" src="/icons/caret-right.svg" onClick={handleNext} />
           </div>
         </motion.div>
       </ImagesSlider>

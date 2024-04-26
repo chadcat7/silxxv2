@@ -14,6 +14,7 @@ import styles from "./tailwind.css?url"
 import React, { createContext, useState } from "react";
 import { BackgroundBeams } from "./components/ui/beams";
 import { AnimatePresence } from "framer-motion";
+import CustomCursor from "./components/CustomMouse";
 
 export function ErrorBoundary() {
   const error = useRouteError();
@@ -21,6 +22,7 @@ export function ErrorBoundary() {
   if (isRouteErrorResponse(error)) {
     return (
       <div className="h-screen flex justify-center items-center">
+        <div id="invertedcursor"></div>
         <BackgroundBeams />
         <h1 className="relative z-10 text-3xl md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
           404 PAGE NOT FOUND
@@ -60,6 +62,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body className="dark overflow-x-clip">
         <DataContext.Provider value={contextValue} >
+          <CustomCursor />
           <div className="w-full overflow-x-clip">
             {children}
           </div>

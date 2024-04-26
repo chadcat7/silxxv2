@@ -57,7 +57,7 @@ export default function Index() {
 
   return (
     <div className="w-screen h-min-screen ">
-      <div className="w-full  h-screen flex justify-center items-center" style={{ background: "linear-gradient(to bottom right, #09090bcc, #09090baa 60%, #09090b99), url('./homepage/header.jpg')", backgroundSize: "100%", clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)", backgroundPosition: "top center", }}>
+      <div className="w-full  h-screen flex justify-center items-center" style={{ background: "linear-gradient(to bottom right, #09090bcc, #09090baa 60%, #09090b99), url('./homepage/header.jpg')", backgroundSize: "cover", clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)", backgroundPosition: "top center", }}>
 
         <div className="content">
           <header className="flex flex-col items-center justify-center mb-4">
@@ -84,7 +84,7 @@ export default function Index() {
 
           <div
             className="grid md-3/4 w-full lg:w-2/3 auto-rows-[280px] grid-cols-3  gap-4">
-            <div className={`row-span-1 relative col-span-3 md:col-span-1 rounded-xl border-2  z-[98] backdrop-blur-3xl border-slate-400/10 relative  p-0 dark:bg-zinc-900/70`}>
+            <div className={`row-span-1 makebig relative col-span-3 md:col-span-1 rounded-xl border-2  z-[98] backdrop-blur-3xl border-slate-400/10 relative  p-0 dark:bg-zinc-900/70`}>
               <GlowingStarsBackgroundCard>
                 <div className="bottom-4 left-4 absolute">
                   <GlowingStarsTitle>40+ Schools</GlowingStarsTitle>
@@ -98,7 +98,7 @@ export default function Index() {
             </div>
 
             <div
-              className={`row-span-1 relative col-span-3 md:col-span-2 rounded-xl border-2 z-[98] backdrop-blur-3xl flex justify-center items-center	 border-slate-400/10   p-4 dark:bg-zinc-900/70 group`}
+              className={`row-span-1 relative col-span-3 makebig md:col-span-2 rounded-xl border-2 z-[98] backdrop-blur-3xl flex justify-center items-center	 border-slate-400/10   p-4 dark:bg-zinc-900/70 group`}
             >
               <div className="absolute bottom-0 z-[1235254656] left-0 p-4 bg-zinc-800/90 backdrop-blur-3xl w-full">Compeitions varying of diverse skill sets and age! All aboard!</div>
               <div
@@ -132,7 +132,7 @@ export default function Index() {
               </div>
             </div>
             <div
-              className={`row-span-1  col-span-3 md:col-span-2 rounded-xl border-2 z-[98] backdrop-blur-3xl	 border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}
+              className={`row-span-1 makebig col-span-3 md:col-span-2 rounded-xl border-2 z-[98] backdrop-blur-3xl	 border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}
             >
               <div
                 className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
@@ -149,7 +149,7 @@ export default function Index() {
               </div>
             </div>
             <div
-              className={`row-span-1 col-span-3 md:col-span-1 overflow-hidden flex-col flex justify-end rounded-xl border-2 z-[98] backdrop-blur-3xl	 border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}
+              className={`row-span-1 col-span-3 makebig md:col-span-1 overflow-hidden flex-col flex justify-end rounded-xl border-2 z-[98] backdrop-blur-3xl	 border-slate-400/10 relative  p-4 dark:bg-zinc-900/70`}
             >
               <h1 className="text-3xl mb-4">Registrations <span className="text-accented font-bold">Out Now</span></h1>
               <div className="flex gap-4 flex-wrap">
