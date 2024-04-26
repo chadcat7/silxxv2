@@ -1,6 +1,7 @@
 import { MetaFunction } from "@remix-run/node";
 import { Member } from "~/components/Member";
 import { motion } from "framer-motion";
+import { teamMembers } from "~/utils/data";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,18 +14,10 @@ export default function Team() {
     <motion.div initial={{ x: "100%" }} animate={{ x: "0%" }} exit={{ opacity: 1 }} transition={{ delay: .3, duration: 1, ease: "easeOut" }} className="px-4 py-32 md:px-12 md:py-48">
       <h1 className="text-3xl md:text-5xl mb-12 font-bold text-center">The <span className="text-accented">CORE TEAM</span></h1>
       <div className="min-h-screen w-full flex justify-center ">
-        <div className="flex w-full flex-wrap justify-center">
-          <Member name="Namish Pande" username="chadcat7" role="President" quote="Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat." pfp="/pfps/namish.jpeg" />
-          <Member name="Namish Pande" username="chadcat7" role="President" quote="Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat." pfp="/pfps/namish.jpeg" />
-          <Member name="Namish Pande" username="chadcat7" role="President" quote="Lorem ipsum dolorbore adipisicing minim sint cillum sint consectetur cupidatat." pfp="/pfps/namish.jpeg" />
-          <Member name="Namish Pande" username="chadcat7" role="President" quote="Lorem ipsum dolor sit amet, minim sint cillum sint consectetur cupidatat." pfp="/pfps/namish.jpeg" />
-          <Member name="Namish Pande" username="chadcat7" role="President" quote="Lorem ipsum dolor sit ametm sint cillum sint consectetur cupidatat." pfp="/pfps/namish.jpeg" />
-          <Member name="Namish Pande" username="chadcat7" role="President" quote="Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat." pfp="/pfps/namish.jpeg" />
-          <Member name="Namish Pande" username="chadcat7" role="President" quote="Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat." pfp="/pfps/namish.jpeg" />
-          <Member name="Namish Pande" username="chadcat7" role="President" quote="Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat." pfp="/pfps/namish.jpeg" />
-          <Member name="Namish Pande" username="chadcat7" role="President" quote="Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat." pfp="/pfps/namish.jpeg" />
-          <Member name="Namish Pande" username="chadcat7" role="President" quote="Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat." pfp="/pfps/namish.jpeg" />
-        </div></div>
+        <div className="flex w-full sm:w-full md:w-full lg:w-2/3 flex-wrap ">
+          {teamMembers.map((e, i) => <Member key={i} name={e.name} username={e.discord} pfp={e.pfp} quote={e.quote} role={e.role} />)}
+        </div>
+      </div>
     </motion.div>
     <motion.div initial={{ x: "100%" }} animate={{ x: "-100%" }} exit={{ opacity: 1 }} transition={{ duration: 1, ease: "easeOut" }} className="fixed top-0 z-[50] bg-accented left-0 h-full w-full">
       <div

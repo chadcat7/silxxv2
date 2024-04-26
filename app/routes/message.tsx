@@ -7,9 +7,9 @@ export const meta: MetaFunction = () => {
   ];
 };
 export default function Team() {
-  return <> <motion.div initial={{ x: "100%" }} animate={{ x: "0%" }} exit={{ opacity: 1 }} transition={{ delay: .3, duration: 1, ease: "easeOut" }} className="px-4  py-32 md:px-12 md:py-48 flex flex-col gap-4 items-center">
+  return <> <motion.div initial={{ x: "100%" }} animate={{ x: "0%" }} exit={{ opacity: 1 }} transition={{ delay: .3, duration: 1, ease: "easeOut" }} className="px-4  py-32 md:px-12 md:py-48 flex flex-col gap-4 items-center min-h-screen">
     <div
-      className="absolute inset-0 h-full w-full  bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:20px_20px] -z-[10]"
+      className="absolute inset-0 min-h-full w-full  bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:20px_20px] -z-[10]"
     ></div>
     <h1 className="text-3xl md:text-5xl mb-12 font-bold text-center">The <span className="text-accented">PRINCIPLE'S MESSAGE</span></h1>
     <p className="w-2/3 text-2xl leading-[3.2rem] text-gray-200">

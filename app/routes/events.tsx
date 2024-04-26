@@ -71,7 +71,7 @@ export default function Events() {
           </div>
         </motion.div>
       </ImagesSlider>
-      <div className="p-4 md:p-12">
+      <div className="p-4 min-h-screen md:p-12">
         <h1 className="text-accented font-bold text-3xl">Info:</h1>
         <div className="flex mt-6 gap-2 items-center">
           <div className="p-[4px] border-[1px] border-accented rounded-full"></div>

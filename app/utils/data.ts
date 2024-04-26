@@ -177,7 +177,7 @@ export const events = [
   {
     title: "Quiz",
     desc: "Simple trivia based quiz! May the most knowledgeable one win",
-    classes: 'ix - xii',
+    classes: 'IX - XII',
     teams: '1',
     code: "quiz",
     participants: '2',
@@ -206,3 +206,77 @@ export const events = [
     ]
   },
 ]
+
+export const teamMembers = [
+  {
+    name: 'Namish Pande',
+    role: 'President',
+    discord: 'chadcat7',
+    quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    pfp: '/pfps/namish.jpeg'
+  },
+  {
+    name: 'Namish Pande',
+    role: 'President',
+    discord: 'chadcat7',
+    quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    pfp: '/pfps/namish.jpeg'
+  },
+  {
+    name: 'Namish Pande',
+    role: 'President',
+    discord: 'chadcat7',
+    quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    pfp: '/pfps/namish.jpeg'
+  },
+  {
+    name: 'Namish Pande',
+    role: 'President',
+    discord: 'chadcat7',
+    quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    pfp: '/pfps/namish.jpeg'
+  },
+  {
+    name: 'Namish Pande',
+    role: 'President',
+    discord: 'chadcat7',
+    quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    pfp: '/pfps/namish.jpeg'
+  },
+  {
+    name: 'Namish Pande',
+    role: 'President',
+    discord: 'chadcat7',
+    quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    pfp: '/pfps/namish.jpeg'
+  },
+  {
+    name: 'Namish Pande',
+    role: 'President',
+    discord: 'chadcat7',
+    quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    pfp: '/pfps/namish.jpeg'
+  },
+  {
+    name: 'Namish Pande',
+    role: 'President',
+    discord: 'chadcat7',
+    quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    pfp: '/pfps/namish.jpeg'
+  },
+  {
+    name: 'Namish Pande',
+    role: 'President',
+    discord: 'chadcat7',
+    quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    pfp: '/pfps/namish.jpeg'
+  },
+  {
+    name: 'Namish Pande',
+    role: 'President',
+    discord: 'chadcat7',
+    quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
+    pfp: '/pfps/namish.jpeg'
+  },
+]
+

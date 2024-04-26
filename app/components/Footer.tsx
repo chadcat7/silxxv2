@@ -1,5 +1,5 @@
 export function Footer() {
-  return <footer style={{ background: "linear-gradient(to  right, #09090bff, #09090bee 60%, #09090baa), url('./header2.png')", backgroundSize: "cover", clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)", backgroundPosition: "top center", }}>
+  return <footer style={{ background: "linear-gradient(to  right, #09090baa, #09090bee 60%, #09090bff), url('/homepage/footer.jpg')", backgroundSize: "cover", clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)", backgroundPosition: "bottom center", }}>
     <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
