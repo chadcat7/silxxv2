@@ -2,7 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 import { HeroParallax } from "~/components/ui/hero";
 import { AnimatedTooltip } from "~/components/ui/people";
 import { Meteors } from "~/components/ui/meteors";
-import { ContainerScroll } from "~/components/ui/scrollanim";
+
 export const meta: MetaFunction = () => {
   return [
     { title: "SILICO BATTLES V20.1" },
