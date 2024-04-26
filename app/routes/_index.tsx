@@ -83,9 +83,9 @@ export default function Index() {
 
           <div
             className="grid md-3/4 w-full lg:w-2/3 auto-rows-[280px] grid-cols-3  gap-4">
-            <div className={`row-span-1 md:p-8 p-4 flex flex-col justify-end relative col-span-3 md:col-span-1 rounded-xl border-2  z-[98] backdrop-blur-3xl border-slate-400/10 relative  p-0 dark:bg-zinc-900/70 `}>
+            <div className={`row-span-1  md:p-8 p-4 flex flex-col justify-end relative col-span-3 md:col-span-1 rounded-xl border-2  z-[98] backdrop-blur-3xl border-slate-400/10 relative  p-0 dark:bg-zinc-900/70 `}>
               <div
-                className="absolute inset-0 h-full w-full bg-[radial-gradient(#808080_1px,transparent_1px)] [background-size:16px_16px]"
+                className="absolute  inset-0 h-full w-full bg-[radial-gradient(#444444_1px,transparent_1px)] [background-size:16px_16px]"
               ></div>
 
               <h1 className="text-3xl font-bold mb-2">40+ Schools</h1>
