@@ -3,6 +3,7 @@ import { HeroParallax } from "~/components/ui/hero";
 import { AnimatedTooltip } from "~/components/ui/people";
 import { Meteors } from "~/components/ui/meteors";
 import EarthCanvas from "~/components/Earth";
+import Accordian, { AccordianItem } from "~/components/Accordian";
 
 export const meta: MetaFunction = () => {
   return [
@@ -155,6 +156,25 @@ export default function Index() {
             </div>
 
           </div>
+        </div>
+      </div>
+      <div className="flex justify-center items-center w-full p-4">
+        <div className="flex justify-center w-full items-center p-4 flex-col">
+          <h1 className="text-4xl font-black mb-8">FAQ</h1>
+          <Accordian className="w-full md:w-2/3">
+            <AccordianItem value="1" trigger="1. Who even are we?">
+              Silico Battles is one of the most innovative and unique tech symposiums in Delhi NCR and all of this being fueled by the relentless dedication of the Souvenir Club. The club activities strive to equip the learners with 21st century skills and competencies like Global Awareness, Design Thinking, Entrepreneurial mindset and empathy. Thus offering a platform for them to learn, create and develop to contribute something to the society and be future leaders
+            </AccordianItem>
+            <AccordianItem value="2" trigger="2. How do I register?">
+              If you are pariticpating via school, your school would need to fill in the registration form with names of all the students competing in the Silico Battles. Only the first form submission would be considered. Solo participation is only allowed in CyQuest (cryptic hunt event), though awards will be given to participants registered via a school.
+            </AccordianItem>
+            <AccordianItem value="3" trigger="3. Am I elgibile to register?">
+              You are eligible to register for an event if you meet the age requirements (different for each event).
+            </AccordianItem>
+            <AccordianItem value="4" trigger="4. Where can I get updates about the event?">
+              You will be updated about the events via the Discord Server. All updates/prompts/results will be shared there. For students under the age of 13 (Scratch participants), a whatsapp group would be made.
+            </AccordianItem>
+          </Accordian>
         </div>
       </div>
       <div className="flex justify-center items-center p-4 lg:p-20">
