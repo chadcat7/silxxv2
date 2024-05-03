@@ -139,7 +139,7 @@ export default function Index() {
                 <div className="div flex items-center">
                   <AnimatedTooltip items={people} />
 
-                  <a href="/team" className="px-3 makebig text-black py-2 bg-accented rounded-full z-[12312]"> → </a>
+                  <a href="/about" className="px-3 makebig text-black py-2 bg-accented rounded-full z-[12312]"> → </a>
                 </div>
 
               </div>

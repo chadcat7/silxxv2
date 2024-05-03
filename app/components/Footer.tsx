@@ -16,7 +16,7 @@ export function Footer() {
                 <a href="/" className="hover:underline makebig">Home</a>
               </li>
               <li className="mb-4">
-                <a href="/team" className="hover:underline makebig">Team</a>
+                <a href="/about" className="hover:underline makebig">About</a>
               </li>
               <li>
                 <a href="/events" className="hover:underline makebig">Events</a>

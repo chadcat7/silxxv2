@@ -49,7 +49,7 @@ export function Nav() {
         <motion.div variants={slide} initial="initial" animate="enter" exit="exit" className="links text-zinc-300 flex flex-col gap-4">
           <a href="/" className="text-5xl mb-2 makebig font-bold transition hover:text-accented">HOME</a>
           <a href="/events" className="text-5xl mb-2 makebig font-bold transition hover:text-accented">THE EVENTS</a>
-          <a href="/team" className="text-5xl mb-2 makebig font-bold transition hover:text-accented">CORE TEAM</a>
+          <a href="/about" className="text-5xl mb-2 makebig font-bold transition hover:text-accented">ABOUT</a>
           <a href="/" className="text-5xl mb-2 makebig font-bold transition hover:text-accented">BROCHURE</a>
           <a href="/" className="text-5xl mb-2 makebig font-bold transition hover:text-accented">REGISTER</a>
           <a href="/" className="text-5xl mb-2 makebig font-bold transition hover:text-indigo-400">DISCORD</a>
