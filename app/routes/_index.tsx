@@ -2,6 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 import { HeroParallax } from "~/components/ui/hero";
 import { AnimatedTooltip } from "~/components/ui/people";
 import { Meteors } from "~/components/ui/meteors";
+import EarthCanvas from "~/components/Earth";
 
 export const meta: MetaFunction = () => {
   return [
@@ -57,7 +58,6 @@ export default function Index() {
   return (
     <div className="w-screen h-min-screen ">
       <div className="w-full  h-screen flex justify-center items-center" style={{ background: "linear-gradient(to bottom right, #09090bcc, #09090baa 60%, #09090b99), url('./homepage/header.jpg')", backgroundSize: "cover", clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)", backgroundPosition: "top center", }}>
-
         <div className="content">
           <header className="flex flex-col items-center justify-center mb-4">
             <h1 className="text-[0.9rem] sm:text-[1.4rem] text-right font-light text-darkfg">TO ERR IS A MACHINE, TO GLITCH A HUMAN</h1>
@@ -154,6 +154,24 @@ export default function Index() {
               <Meteors number={10} />
             </div>
 
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center items-center p-4 lg:p-20">
+        <div className="relative lg:flex items-center justify-center h-full w-full gap-4">
+          <div className="absolute z-[95] lg:relative  border-2 z-[98] backdrop-blur-md	 border-slate-400/10 contact-info p-4 lg:p-12 h-[30rem] lg:h-[40rem] w-full lg:w-1/3 bg-neutral-900/80 rounded-xl"
+
+          >
+            <h1 className="text-3xl font-bold">Contact</h1>
+            <div className="block py-[0.75px] rounded-xl mt-2 mb-8 bg-neutral-300"></div>
+            <p className="uppercase makebig font-light mb-6 text-xl md:text-2xl">PHONE: +91 9868881234</p>
+            <p className="uppercase makebig font-light mb-6 text-xl md:text-2xl word-wrap">MAIL : mailaps@school.com</p>
+            <p className="uppercase makebig font-light mb-6 text-xl md:text-2xl word-wrap">ADDR : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, ullam.</p>
+            <p className="uppercase makebig font-light mb-6 text-xl md:text-2xl">INSTA : @instagramid.com</p>
+          </div>
+
+          <div className="relative makebig h-[30rem] lg:h-[50rem] w-full lg:w-1/2 ">
+            <EarthCanvas />
           </div>
         </div>
       </div>
