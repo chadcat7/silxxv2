@@ -11,7 +11,5 @@ huge shoutout remix and aceternity
 - [x] rickroll link 
 - [x] correct metadata
 - [x] new favicon
-- [ ] animation on landing page
 - [x] 404 page
-- [x] page transitions
 - [x] optimize images

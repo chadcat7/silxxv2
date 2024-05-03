@@ -217,63 +217,63 @@ export const teamMembers = [
   },
   {
     name: 'Namish Pande',
-    role: 'President',
+    role: 'Vice President',
     discord: 'chadcat7',
     quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     pfp: '/pfps/namish.jpeg'
   },
   {
     name: 'Namish Pande',
-    role: 'President',
+    role: 'Head Of Systems',
     discord: 'chadcat7',
     quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     pfp: '/pfps/namish.jpeg'
   },
   {
     name: 'Namish Pande',
-    role: 'President',
+    role: 'GFX Head',
     discord: 'chadcat7',
     quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     pfp: '/pfps/namish.jpeg'
   },
   {
     name: 'Namish Pande',
-    role: 'President',
+    role: 'VFX Head',
     discord: 'chadcat7',
     quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     pfp: '/pfps/namish.jpeg'
   },
   {
     name: 'Namish Pande',
-    role: 'President',
+    role: 'Network and Web Head',
     discord: 'chadcat7',
     quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     pfp: '/pfps/namish.jpeg'
   },
   {
     name: 'Namish Pande',
-    role: 'President',
+    role: 'GFX Coordinator',
     discord: 'chadcat7',
     quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     pfp: '/pfps/namish.jpeg'
   },
   {
     name: 'Namish Pande',
-    role: 'President',
+    role: 'VFX Coordinator',
     discord: 'chadcat7',
     quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     pfp: '/pfps/namish.jpeg'
   },
   {
     name: 'Namish Pande',
-    role: 'President',
+    role: 'Network Coordinator',
     discord: 'chadcat7',
     quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     pfp: '/pfps/namish.jpeg'
   },
   {
     name: 'Namish Pande',
-    role: 'President',
+    role: 'Web Coordinator',
     discord: 'chadcat7',
     quote: 'Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.',
     pfp: '/pfps/namish.jpeg'

@@ -179,7 +179,7 @@ export default function Index() {
       </div>
       <div className="flex justify-center items-center p-4 lg:p-20">
         <div className="relative lg:flex items-center justify-center h-full w-full gap-4">
-          <div className="absolute z-[95] lg:relative  border-2 z-[98] backdrop-blur-md	 border-slate-400/10 contact-info p-4 lg:p-12 h-[30rem] lg:h-[40rem] w-full lg:w-1/3 bg-neutral-900/80 rounded-xl"
+          <div className="absolute rotate-0 lg:-rotate-6 z-[95] lg:relative  border-2 z-[98] backdrop-blur-md	 border-slate-400/10 contact-info p-4 lg:p-12 h-[30rem] lg:h-[40rem] w-full lg:w-1/3 bg-neutral-900/80 rounded-xl"
 
           >
             <h1 className="text-3xl font-bold">Contact</h1>
