@@ -1,8 +1,7 @@
 import { MetaFunction } from "@remix-run/node";
-import { motion } from "framer-motion";
 export const meta: MetaFunction = () => {
   return [
-    { title: "SILICO BATTLES V20.1" },
+    { title: "Principal's Message | Silico Battles" },
     { name: "description", content: "Message From The Principle" },
   ];
 };

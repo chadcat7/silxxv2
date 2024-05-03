@@ -4,8 +4,8 @@ import { teamMembers } from "~/utils/data";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "SILICO BATTLES CORE TEAM V20.1" },
-    { name: "description", content: "Team members of the 20th version of the Silico Battles." },
+    { title: "About | Silico Battles v20.1" },
+    { name: "description", content: "All about the Souvenir Club and it's members." },
   ];
 };
 export default function Team() {

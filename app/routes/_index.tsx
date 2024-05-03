@@ -7,7 +7,7 @@ import Accordian, { AccordianItem } from "~/components/Accordian";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "SILICO BATTLES V20.1" },
+    { title: "Home | Silico Battles v20.1" },
     { name: "description", content: "Welcome to the 20th version of the Silico Battles." },
   ];
 };
