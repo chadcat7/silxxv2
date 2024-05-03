@@ -161,7 +161,7 @@ export default function Index() {
       <div className="flex justify-center items-center w-full p-4">
         <div className="flex justify-center w-full items-center p-4 flex-col">
           <h1 className="text-4xl font-black mb-8">FAQ</h1>
-          <Accordian className="w-full md:w-2/3">
+          <Accordian className="w-full md:w-2/3 rounded-xl">
             <AccordianItem value="1" trigger="1. Who even are we?">
               Silico Battles is one of the most innovative and unique tech symposiums in Delhi NCR and all of this being fueled by the relentless dedication of the Souvenir Club. The club activities strive to equip the learners with 21st century skills and competencies like Global Awareness, Design Thinking, Entrepreneurial mindset and empathy. Thus offering a platform for them to learn, create and develop to contribute something to the society and be future leaders
             </AccordianItem>
