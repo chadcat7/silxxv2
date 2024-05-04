@@ -32,7 +32,7 @@ export function Nav() {
   const [open, setOpen] = useState(false)
   return <>
     <a href="/" className="absolute makebig  top-8 lg:top-16 left-8 lg:left-16">
-      <img src="./logo.png" className="h-12 lg:h-16" />
+      <img src="/logo.png" className="h-12 lg:h-16" />
     </a>
     <div onClick={() => setOpen(!open)} className="fixed cursor-none makebig top-8 lg:top-16 z-[100] rounded-full right-8 lg:right-16  h-12 lg:h-16 w-12 lg:w-16 bg-white flex justify-center items-center">
       <div className={`flex justify-center items-center transition ${open ? 'gap-0' : 'gap-2'} flex-col`}>

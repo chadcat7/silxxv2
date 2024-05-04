@@ -113,3 +113,42 @@ html {
   transform: translate(-25%, -25%);
   mix-blend-mode: difference;
 }
+
+.image-track {
+display: flex;
+gap: 4vmin;
+position: absolute;
+transform: translate(0%, -50%);
+left: 5%;
+user-select: none;
+top: 50%;
+}
+
+.titlecard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.image-link  {
+  width: 20rem;
+  height: 30rem;
+  user-select: none;
+  object-fit: cover;
+  object-position: 100% center;
+}
+.image-link2  {
+  width: 20rem;
+  pointer-events: none;
+  height: 30rem;
+  object-fit: cover;
+  object-position: 100% center;
+}
+.image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+user-select: none;
+}

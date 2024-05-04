@@ -1,5 +1,6 @@
 export const events = [
   {
+    id: "respawnpc",
     title: "Respawn Console",
     desc: "Play in tournament of 1v1 matches to become the ultimate champion",
     classes: 'IX - XII',
@@ -44,7 +45,7 @@ export const events = [
     teams: '1',
     participants: '2',
     software: '',
-    code: "foto",
+    code: "fotographia",
     rules: [
       "Participants will be required to click two photographs under the given prompt.",
       "The prompts will be dropped on 7 October 2023.",
@@ -77,7 +78,7 @@ export const events = [
     classes: 'IX - XII',
     teams: '1',
     participants: '2',
-    code: "srprog",
+    code: "srprogramming",
     software: 'Hackerrank // IDLE',
     rules: [
       "This will be an ONLINE event on 0ctober 2 2023.",
@@ -115,7 +116,7 @@ export const events = [
     teams: '1',
     participants: '2',
     software: '',
-    code: 'robo',
+    code: 'robowars',
     rules: [
       "All the robots should be controlled wirelessly or wired from outside the arena (atleast 5m long wire).",
       "We will provide power points of 240 V AC",
@@ -135,7 +136,7 @@ export const events = [
     classes: 'Open',
     teams: '1',
     participants: '2',
-    code: "crypt",
+    code: "cyquest",
     software: 'CyQuest Server',
     rules: [
       "This is an enigmatic cryptic hunt encompassing elements of an Alternate Reality Game (ARG), where every step decides the next.",
@@ -148,7 +149,7 @@ export const events = [
   {
     title: "Digital Imaging",
     desc: "Design a orignal picture based on the prompt given",
-    code: "photoshop",
+    code: "digital-imaging",
     classes: 'Open',
     teams: '1',
     participants: '2',
@@ -190,7 +191,7 @@ export const events = [
     ]
   },
   {
-    code: "sc",
+    code: "scratch",
     title: "Scratch",
     desc: "Make Interactive And Engaging Games To Be The Ultimate Game Dev",
     classes: 'VI - VIII',
