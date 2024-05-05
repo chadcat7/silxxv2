@@ -117,8 +117,8 @@ export default function Events() {
             onMouseUp={handleMouseUp}
             onTouchEnd={onTouchUp}
             className="image-link"><div className="image-link2 relative" style={{ background: `linear-gradient(to right, #00000088,#00000088), url('/events/${j + 1}.jpg')` }}>
-              <span onClick={() => handleClick(i.code)} className="absolute pointer-events-auto bg-neutral-900 rounded-xl px-6 py-2 top-4 left-4">More Details</span>
-              <span className="titlecard font-bold font-xl uppercase absolute">{i.title}</span>
+              <span onClick={() => handleClick(i.code)} className="makebig absolute pointer-events-auto bg-neutral-900 rounded-xl px-6 py-2 top-4 left-4">More Details</span>
+              <span className="titlecard select-none font-bold text-xl text-center uppercase absolute">{i.title}</span>
             </div></span>
         })}
       </div>

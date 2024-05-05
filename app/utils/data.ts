@@ -1,7 +1,7 @@
 export const events = [
   {
     id: "respawnpc",
-    title: "Respawn Console",
+    title: "Respawn Con",
     desc: "Play in tournament of 1v1 matches to become the ultimate champion",
     classes: 'IX - XII',
     teams: '1',
@@ -73,7 +73,7 @@ export const events = [
     ]
   },
   {
-    title: "Sr Programming",
+    title: "Programming",
     desc: "Compete to give the most optimal solutions in the least time",
     classes: 'IX - XII',
     teams: '1',
