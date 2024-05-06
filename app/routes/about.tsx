@@ -12,7 +12,7 @@ export default function Team() {
   return <>
     <div className=" w-full flex flex-col justify-center ">
       <div className="w-full  min-h-screen pt-20  flex flex-col justify-center items-center" style={{ background: "linear-gradient(to bottom right, #09090bcc, #09090bbb 60%, #09090b99), url('./homepage/header.png')", backgroundSize: "cover", clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)", backgroundPosition: "top center", }}>
-        <div className="mb-2 my-2 backdrop-blur-3xl text-sm md:text-md rounded-full bg-sky-900/10 py-2 px-2 md:px-12 border-[1px] border-amber-400/30">Celebrating Two Decades Of the Silio Battles!</div>
+        <div className="mb-2 my-2 backdrop-blur-3xl text-sm md:text-md rounded-full bg-sky-900/10 py-2 px-2 md:px-12 border-[1px] border-amber-400/30">Celebrating Two Decades Of the Silico Battles!</div>
         <div className=" text-[3rem] md:text-[5rem] font-light">Our Mission</div>
         <div className="text-2xl mt-4 mb-6 px-6 text-center">Empowering the future of tech since 2004</div>
         <div className="text-lg text-center w-full md:w-1/2 px-6 md:p-0">

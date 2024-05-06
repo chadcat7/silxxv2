@@ -41,11 +41,9 @@ export function Nav() {
       </div>
     </div>
     <AnimatePresence mode="wait">
-      {open && <motion.div variants={slide} className="bg-zinc-950 z-[99] p-6 lg:p-16 fixed right-0 top-0 h-screen w-full lg:w-1/3 " initial="initial" animate="enter" exit="exit">
-        <div className="h-16 flex items-center">
-          <p className="text-2xl text-gray-300">NAVIGATION</p>
-        </div>
-        <div className="py-[0.2px] my-12 bg-zinc-700"></div>
+      {open && <motion.div variants={slide} className="bg-zinc-950 z-[99] p-6 lg:p-24 fixed right-0 top-0 h-screen w-full lg:w-1/3 " initial="initial" animate="enter" exit="exit">
+        <p className="text-2xl text-gray-300">NAVIGATION</p>
+        <div className="py-[0.2px] my-6 lg:my-8 bg-zinc-700"></div>
         <motion.div variants={slide} initial="initial" animate="enter" exit="exit" className="links text-zinc-300 flex flex-col gap-4">
           <a href="/" className="text-5xl mb-2 makebig font-bold transition hover:text-accented">HOME</a>
           <a href="/events" className="text-5xl mb-2 makebig font-bold transition hover:text-accented">THE EVENTS</a>
